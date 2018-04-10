@@ -1,6 +1,6 @@
 # Affect Grid
 
-Try a [demo][https://earcanal.github.io/affect-grid/].
+Try a [demo](https://earcanal.github.io/affect-grid/).
 
 # References
 
