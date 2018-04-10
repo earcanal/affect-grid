@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My experiment</title>
+    <script src="jsPsych-6.0.1/jspsych.js"></script>
+    <script src="jsPsych-6.0.1/plugins/jspsych-html-keyboard-response.js"></script>
+    <script src="jsPsych-6.0.1/plugins/jspsych-survey-text.js"></script>
+    <link href="jsPsych-6.0.1/css/jspsych.css" rel="stylesheet" type="text/css"></link>
+  </head>
+  <body></body>
+  <script>
+
+    var timeline = [];
+    var welcome = {
+      type: "html-keyboard-response",
+      stimulus: "Welcome to the experiment. Press any key to begin."
+    };
+    timeline.push(welcome);
+
+    var foo_block = {
+      type: "html-keyboard-response",
+      stimulus: function() {
+        var trial = {
+          type: 'html-keyboard-response',
+          stimulus: 'This is a trial on the timeline that was dynamically added.'
+        }
+        var new_timeline = { timeline: [trial] }
+        jsPsych.addNodeToEndOfTimeline(new_timeline, function(){});
+        return "<p>Added a new timeline to the experiment</p>";
+      }
+    };
+    timeline.push(foo_block);
+
+    /* start the experiment */
+    jsPsych.init({
+      timeline: timeline
+    });
+  </script>
+  </html>

@@ -1,0 +1,14 @@
+{
+    "name": "Affect Grid",
+    "exp_id": "affect-grid",
+    "url": "https://www.github.com/earcanal/affect-grid/",
+    "description":"A single-item scale of pleasure and arousal (Russel, Weiss, & Mendelsohn, 1989).",
+    "instructions": "N/A",
+    "template":"jspsych",
+    "cognitive_atlas_task_id": "",
+    "contributors": [
+                     "Paul Sharpe"
+                    ], 
+    "time":1,
+    "reference": ["https://pdfs.semanticscholar.org/e9a2/b67cc02c1fb6d2cb70a96b466988ea92cb6c.pdf"]
+}
