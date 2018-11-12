@@ -20,15 +20,6 @@ Data frame
 }
 \examples{
 \dontrun{
-rsvp_df <- expand.grid(token = participants$token) \%>\%
- mutate(path=paste('data/', token, '_finished/rsvp-task-results.json', sep=''))
-rsvp_df <- rsvp_df \%>\%
-group_by(token) \%>\%
- do(., process_rsvp(.$path, .$token)) \%>\%
- ungroup \%>\%
- left_join(participants, by='token') \%>\%
- filter(phase == 'test', test_part == "response") \%>\%
- select(p, condition, trial_number, lag, correct, t1_correct, t2_correct, rt)
 }
 }
 \keyword{affect}
