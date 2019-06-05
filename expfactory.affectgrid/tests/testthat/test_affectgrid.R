@@ -14,7 +14,16 @@ test_that('Affect Grid arousal score is correct', {
   expect_equal(df[1,'arousal'], 2)
 })
 
-df <- affect_grid(path, p=1)
 test_that('Affect Grid pleasure score is correct', {
   expect_equal(df[1,'pleasure'], 2)
+})
+
+path <- paste0(data_dir,'/',participants[1,1],'_finished/affect-grid-2-results.json')
+df <- affect_grid(path, p=2)
+test_that('Affect Grid arousal score is correct', {
+  expect_equal(df[1,'arousal'], 0)
+})
+
+test_that('Affect Grid pleasure score is correct', {
+  expect_equal(df[1,'pleasure'], -1)
 })
