@@ -15,6 +15,6 @@ test_that('Affect Grid arousal score is correct', {
 })
 
 df <- affect_grid(path, p=1)
-test_that('Affect Grid arousal score is correct', {
+test_that('Affect Grid pleasure score is correct', {
   expect_equal(df[1,'pleasure'], 2)
 })
