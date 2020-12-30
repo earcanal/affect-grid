@@ -1,6 +1,6 @@
 # Affect Grid
 
-This is the [Affect Grid](https://earcanal.github.io/affect-grid/) for use in the [Experiment Factory](https://expfactory.github.io/expfactory).
+This is the [Affect Grid](https://paulsharpey.github.io/affect-grid/) for use in the [Experiment Factory](https://expfactory.github.io/expfactory).
 
 You can run it locally by putting these files in a web server, or use the Experiment Factory to generate a reproducible container.
 
